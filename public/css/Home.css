@@ -55,7 +55,7 @@ body {
 }
 
 .intro-scroll {
-  transform: scaleY(0.085);
+  transform: scaleY(0.070);
 }
 
 
@@ -63,19 +63,18 @@ nav{
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(0);
+  transform: translate(-50%, -50%) rotate(0) scale(1);
   z-index: 2;
 }
 
 .profile {
   height: 200px;
   border-radius: 50% 50%;
-  transform: scale(1);
   transition: transform 2s;
 }
 
 .profile-scroll {
-  transform: translate(-39vw, -34vh) scale(0.22);
+  transform: translate(-39vw, -36.2vh) scale(0.22);
 }
 
 .name {
@@ -217,7 +216,7 @@ nav{
 }
 
 .text-link-scroll{
-  transform: translate(35vw, -70.5vh);
+  transform: translate(35vw, -68.5vh) scale(0.8);
 }
 
 
@@ -932,11 +931,11 @@ nav{
 
 @media screen and (max-width : 500px){
   .profile-scroll {
-    transform: translate(-44.5vw, -34vh) scale(0.23);
+    transform: translate(-43vw, -36vh) scale(0.22);
   }
 
   .intro-scroll {
-    transform: scaleY(0.085);
+    transform: scaleY(0.070);
   }
 
   .icons-scroll {
@@ -958,7 +957,7 @@ nav{
   } */
 
   .text-link-scroll{
-    transform: translate(42vw, -70.5vh);
+    transform: translate(42vw, -69vh) scale(0.8);
   }
 }
 
@@ -974,7 +973,7 @@ nav{
   }
 
   .intro-scroll {
-    transform: scaleY(0.085);
+    transform: scaleY(0.070);
   }
 
   /* .icons-github-scroll {
@@ -1011,7 +1010,7 @@ nav{
   }
 
   .intro-scroll {
-    transform: scaleY(0.085);
+    transform: scaleY(0.070);
   }
 
   .icons-scroll {
