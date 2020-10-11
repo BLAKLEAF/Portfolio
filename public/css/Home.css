@@ -126,7 +126,7 @@ nav{
 }
 
 .icon-github-scroll{
-  transform: rotate(1170deg);
+  transform: rotate(2610deg);
 }
 
 .icon-linkedin {
@@ -136,7 +136,7 @@ nav{
 }
 
 .icon-linkedin-scroll{
-  transform: rotate(1170deg);
+  transform: rotate(2610deg);
 }
 
 .icon-dribbble {
@@ -146,7 +146,7 @@ nav{
 }
 
 .icon-dribbble-scroll{
-  transform: rotate(1170deg);
+  transform: rotate(2610deg);
 }
 
 .icons-scroll {
@@ -916,20 +916,20 @@ nav{
 
 
 
-@media screen and (max-width : 800px){
+/* @media screen and (max-width : 800px){
 
   .icons-scroll {
     transform: translate(47vw, -35vh) rotate(-90deg);
   }
 
 
-}
+} */
 
 
 
 
 
-@media screen and (max-width : 500px){
+/* @media screen and (max-width : 500px){
   .profile-scroll {
     transform: translate(-43vw, -36vh) scale(0.22);
   }
@@ -944,22 +944,11 @@ nav{
 
 
 
-  /* .icons-github-scroll {
-    transform: translate(55.2vw, -44vh);
-  } */
-
-  /* .icons-linkedin-scroll {
-      transform: translate(46vw, -37vh);
-  } */
-
-  /* .icons-dribbble-scroll {
-    transform: translate(37vw, -30vh);
-  } */
 
   .text-link-scroll{
     transform: translate(42vw, -69vh) scale(0.8);
   }
-}
+} */
 
 
 
@@ -967,7 +956,7 @@ nav{
 
 
 
-@media screen and (max-width : 420px){
+/* @media screen and (max-width : 420px){
   .profile-scroll {
     transform: translate(-44vw, -34vh) scale(0.20);
   }
@@ -976,22 +965,11 @@ nav{
     transform: scaleY(0.070);
   }
 
-  /* .icons-github-scroll {
-    transform: translate(55.2vw, -44vh);
-  } */
-
-  /* .icons-linkedin-scroll {
-      transform: translate(46vw, -37vh);
-  } */
-
-  /* .icons-dribbble-scroll {
-    transform: translate(37vw, -30vh);
-  } */
 
   .text-link-scroll{
     transform: translate(41vw, -70.5vh);
   }
-}
+} */
 
 
 
@@ -1004,7 +982,7 @@ nav{
 
 
 
-@media screen and (max-width : 380px){
+/* @media screen and (max-width : 380px){
   .profile-scroll {
     transform: translate(-44vw, -34vh) scale(0.20);
   }
@@ -1017,22 +995,10 @@ nav{
     transform: translate(45vw, -35vh) rotate(-90deg);
   }
 
-  /* .icons-github-scroll {
-    transform: translate(57vw, -44vh);
-  } */
-
-  /* .icons-linkedin-scroll {
-      transform: translate(44vw, -37vh);
-  } */
-
-  /* .icons-dribbble-scroll {
-    transform: translate(31.5vw, -30vh);
-  } */
-
   .text-link-scroll{
     transform: translate(40vw, -70.5vh);
   }
-}
+} */
 
 
 
@@ -1041,7 +1007,7 @@ nav{
 
 
 
-@media screen and (max-width : 300px){
+/* @media screen and (max-width : 300px){
   .profile-scroll {
     transform: translate(-42vw, -34vh) scale(0.22);
   }
@@ -1054,22 +1020,10 @@ nav{
     transform: translate(44vw, -35vh) rotate(-90deg);
   }
 
-  /* .icons-github-scroll {
-    transform: translate(57vw, -44vh);
-  } */
-
-  /* .icons-linkedin-scroll {
-      transform: translate(44vw, -37vh);
-  } */
-
-  /* .icons-dribbble-scroll {
-    transform: translate(31.5vw, -30vh);
-  } */
-
   .text-link-scroll{
     transform: translate(38vw, -70.5vh);
   }
-}
+} */
 
 
 
@@ -1090,7 +1044,7 @@ nav{
 
 
 
-@media screen and (width : 375px), screen and (height : 812px){
+/* @media screen and (width : 375px), screen and (height : 812px){
   .profile-scroll {
     transform: translate(-43vw, -37.2vh) scale(0.24);
   }
@@ -1107,15 +1061,6 @@ nav{
     transform: translate(45vw, -35vh) rotate(-90deg);
   }
 
-  /* .icons-github-scroll {
-    transform: translate(55.5vw, -40vh);
-  } */
 
-  /* .icons-linkedin-scroll {
-    transform: translate(45vw, -35vh);
-  } */
 
-  /* .icons-dribbble-scroll {
-    transform: translate(35vw, -30vh);
-  } */
-}
+} */
