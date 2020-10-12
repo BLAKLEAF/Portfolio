@@ -1015,12 +1015,15 @@ nav{
   }
 }
 
-@media screen and (max-height : 756px){
+@media screen and (max-height : 900px){
 
   .profile-scroll {
-    transform: translate(-44vw, -33vh) scale(0.20);
+    transform: translate(-44vw, -37.5vh) scale(0.20);
   }
 
+  .text-link-scroll{
+    transform: translate(41vw, -65vh) scale(0.8);
+  }
 
 }
 
