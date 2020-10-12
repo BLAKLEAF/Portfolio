@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* background: #CCC; */
 }
 
 
@@ -72,7 +71,7 @@ nav{
 }
 
 .profile-scroll {
-  transform: translate(-39vw, -36.2vh) scale(0.22);
+  transform: translate(-39vw, -36.5vh) scale(0.22);
 }
 
 .name {
@@ -170,7 +169,7 @@ nav{
 }
 
 .text-link-scroll{
-  transform: translate(35vw, -68.5vh) scale(0.8);
+  transform: translate(35vw, -67.5vh) scale(0.8);
 }
 
 
@@ -974,7 +973,7 @@ nav{
 
 
 
-@media screen and (max-width : 500px){
+/* @media screen and (max-width : 500px){
   .profile-scroll {
     transform: translate(-43vw, -36vh) scale(0.22);
   }
@@ -990,7 +989,7 @@ nav{
   .text-link-scroll{
     transform: translate(42vw, -69vh) scale(0.8);
   }
-}
+} */
 
 
 
@@ -999,7 +998,7 @@ nav{
 
 
 
-
+/*
 @media screen and (max-width : 420px){
   .profile-scroll {
     transform: translate(-44vw, -36.5vh) scale(0.20);
@@ -1013,9 +1012,9 @@ nav{
   .text-link-scroll{
     transform: translate(41vw, -67.7vh) scale(0.8);
   }
-}
+} */
 
-@media screen and (max-height : 900px){
+/* @media screen and (max-height : 900px){
 
   .profile-scroll {
     transform: translate(-44vw, -37.5vh) scale(0.20);
@@ -1025,7 +1024,7 @@ nav{
     transform: translate(41vw, -65vh) scale(0.8);
   }
 
-}
+} */
 
 
 
@@ -1096,6 +1095,69 @@ nav{
 
 
 
+
+
+
+
+
+
+
+@media screen and (width : 1024px), screen and (height : 643px){
+  .profile-scroll {
+    transform: translate(-43vw, -34.3vh) scale(0.20);
+  }
+
+  .intro-scroll {
+    transform: scaleY(0.080);
+  }
+
+  .text-link-scroll{
+    transform: translate(39vw, -70.5vh) scale(0.8);
+  }
+
+  .icons-scroll {
+    transform: translate(48vw, -35vh) rotate(-90deg);
+  }
+
+}
+
+@media screen and (width : 768px), screen and (height : 643px){
+  .profile-scroll {
+    transform: translate(-43vw, -34.3vh) scale(0.20);
+  }
+
+  .intro-scroll {
+    transform: scaleY(0.080);
+  }
+
+  .text-link-scroll{
+    transform: translate(39vw, -70.5vh) scale(0.8);
+  }
+
+  .icons-scroll {
+    transform: translate(48vw, -35vh) rotate(-90deg);
+  }
+
+}
+
+@media screen and (min-width : 425px), screen and (min-height : 643px){
+  .profile-scroll {
+    transform: translate(-43vw, -34.8vh) scale(0.20);
+  }
+
+  .intro-scroll {
+    transform: scaleY(0.070);
+  }
+
+  .text-link-scroll{
+    transform: translate(39vw, -71vh) scale(0.7);
+  }
+
+  .icons-scroll {
+    transform: translate(46vw, -35vh) rotate(-90deg) scale(0.8);
+  }
+
+}
 
 
 
