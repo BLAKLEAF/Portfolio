@@ -1159,7 +1159,43 @@ nav{
 
 }
 
+@media screen and (min-width : 412px), screen and (min-height : 756px){
+  .profile-scroll {
+    transform: translate(-43vw, -36.5vh) scale(0.20);
+  }
 
+  .intro-scroll {
+    transform: scaleY(0.070);
+  }
+
+  .text-link-scroll{
+    transform: translate(39vw, -68vh) scale(0.7);
+  }
+
+  .icons-scroll {
+    transform: translate(46vw, -35vh) rotate(-90deg) scale(0.8);
+  }
+
+}
+
+@media screen and (min-width : 412px), screen and (min-height : 812px){
+  .profile-scroll {
+    transform: translate(-43vw, -36.5vh) scale(0.20);
+  }
+
+  .intro-scroll {
+    transform: scaleY(0.070);
+  }
+
+  .text-link-scroll{
+    transform: translate(39vw, -68vh) scale(0.7);
+  }
+
+  .icons-scroll {
+    transform: translate(46vw, -35vh) rotate(-90deg) scale(0.8);
+  }
+
+}
 
 
 
