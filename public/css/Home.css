@@ -1018,7 +1018,7 @@ nav{
 @media screen and (max-height : 756px){
 
   .profile-scroll {
-    transform: translate(-44vw, -35vh) scale(0.20);
+    transform: translate(-44vw, -33vh) scale(0.20);
   }
 
 
