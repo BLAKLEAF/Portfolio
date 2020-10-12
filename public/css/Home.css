@@ -1000,9 +1000,9 @@ nav{
 
 
 
-/* @media screen and (max-width : 420px){
+@media screen and (max-width : 420px){
   .profile-scroll {
-    transform: translate(-44vw, -34vh) scale(0.20);
+    transform: translate(-44vw, -36.5vh) scale(0.20);
   }
 
   .intro-scroll {
@@ -1011,9 +1011,11 @@ nav{
 
 
   .text-link-scroll{
-    transform: translate(41vw, -70.5vh);
+    transform: translate(41vw, -67.7vh) scale(0.8);
   }
-} */
+}
+
+
 
 
 
