@@ -1299,17 +1299,6 @@ nav{
 } */
 
 
-/* @media screen and (max-width : 1000px){
-  .icons-scroll {
-    transform: translate(47.5vw, -35vh) rotate(-90deg) scale(0.8);
-  }
-} */
-
-/* @media screen and (max-width : 500px){
-  .icons-scroll {
-    transform: translate(45vw, -35vh) rotate(-90deg) scale(0.8);
-  }
-} */
 
 /* @media screen and (min-height : 1000px){
   .profile-scroll {
@@ -1383,4 +1372,16 @@ nav{
     align-items: center;
   }
 
+}
+
+@media screen and (max-width : 1000px){
+  .icons-scroll {
+    transform: translate(47.5vw, -35vh) rotate(-90deg) scale(0.8);
+  }
+}
+
+@media screen and (max-width : 500px){
+  .icons-scroll {
+    transform: translate(45vw, -35vh) rotate(-90deg) scale(0.8);
+  }
 }
