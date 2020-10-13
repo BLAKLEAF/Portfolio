@@ -63,31 +63,6 @@ $(window).on("scroll", () => {
 });
 
 
-
-// $(window).on("scroll", () => {
-//   if($(window).scrollTop()){
-//     $(".icon-github").addClass("icons-github-scroll");
-//   }else{
-//     $(".icon-github").removeClass("icons-github-scroll");
-//   }
-// });
-//
-// $(window).on("scroll", () => {
-//   if($(window).scrollTop()){
-//     $(".icon-linkedin").addClass("icons-linkedin-scroll");
-//   }else{
-//     $(".icon-linkedin").removeClass("icons-linkedin-scroll");
-//   }
-// });
-//
-// $(window).on("scroll", () => {
-//   if($(window).scrollTop()){
-//     $(".icon-dribbble").addClass("icons-dribbble-scroll");
-//   }else{
-//     $(".icon-dribbble").removeClass("icons-dribbble-scroll");
-//   }
-// });
-
 $(window).on("scroll", () => {
   if($(window).scrollTop()){
     $(".text-section").addClass("text-link-scroll");
