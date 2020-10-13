@@ -1,4 +1,26 @@
+$(window).on("scroll", () => {
+  if ($(window).scrollTop()){
+    $("header").removeClass("header-scroll-down").addClass("header-scroll-up");
+  }else{
+    $("header").removeClass("header-scroll-up").addClass("header-scroll-down");
+  }
+});
 
+$(window).on("scroll", () => {
+  if ($(window).scrollTop()){
+    $(".header-profile").addClass("header-profile-scroll");
+  }else{
+    $(".header-profile").removeClass("header-profile-scroll");
+  }
+});
+
+$(window).on("scroll", () => {
+  if ($(window).scrollTop()){
+    $(".header-text-link-container").addClass("header-text-link-scroll");
+  }else{
+    $(".header-text-link-container").removeClass("header-text-link-scroll");
+  }
+});
 
 $(window).on("scroll", () => {
   if ($(window).scrollTop()){
