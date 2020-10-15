@@ -443,17 +443,20 @@ footer{
 
 
   main{
+    box-sizing: border-box;
     position: relative;
     top: 100%;
     text-align: center;
     transform: translateY(0);
     transition: transform 0.5s;
-    margin: 0 10px 150px 10px;
+    margin: 150px 10px 150px 10px;
 
   }
 
   .main-scroll{
-    transform: translateY(-80vh);
+    transform: translateY(-250vh);
+    margin: 0 10px 0 10px;
+    padding-bottom: 70px;
   }
 
   .skills-heading{
