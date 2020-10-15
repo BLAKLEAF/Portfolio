@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
 
-
 body {
   margin: 0;
   padding: 0;
@@ -10,8 +9,7 @@ body {
   width: 100vw;
   height: 100vh;
 } */
-
-.header{
+.header {
   width: 100%;
   height: 50px;
   /* background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%); */
@@ -27,54 +25,56 @@ body {
   align-items: center;
 }
 
-.header-scroll-up{
+.header-scroll-up {
   animation-name: header-animation-up;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes header-animation-up{
-  from{
+@keyframes header-animation-up {
+  from {
     top: -50px;
     opacity: 0;
   }
-  to{
+
+  to {
     top: 0;
     opacity: 1;
   }
 }
 
-.header-scroll-down{
+.header-scroll-down {
   animation-name: header-animation-down;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes header-animation-down{
-  from{
+@keyframes header-animation-down {
+  from {
     top: 0px;
     opacity: 1;
   }
-  to{
+
+  to {
     top: -50px;
     opacity: 0;
   }
 }
 
-.header-profile{
+.header-profile {
   height: 45px;
   border-radius: 50% 50%;
   transform: scale(0);
   transition: transform 1s 2s ease-in-out;
 }
 
-.header-profile-scroll{
+.header-profile-scroll {
   transform: scale(1);
 }
 
-.header-text-link{
+.header-text-link {
   padding: 4px 5px 2px 6px;
   border: 2px solid #4788C7;
   border-radius: 15px;
@@ -86,15 +86,14 @@ body {
   font-size: 12px;
 }
 
-.header-text-link-container{
+.header-text-link-container {
   transform: scale(0);
   transition: transform 1s 2s ease-in-out;
 }
 
-.header-text-link-scroll{
+.header-text-link-scroll {
   transform: scale(1);
 }
-
 
 .intro {
   background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
@@ -113,8 +112,7 @@ body {
   transform: scaleY(0.070);
 }
 
-
-nav{
+nav {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -130,7 +128,6 @@ nav{
 
 .profile-scroll {
   transform: translate(-39vw, -36.3vh) scale(0);
-
 }
 
 .name {
@@ -143,7 +140,7 @@ nav{
   transition: transform 1s;
 }
 
-.name-scroll{
+.name-scroll {
   transform: translateX(-1000%);
 }
 
@@ -157,13 +154,12 @@ nav{
   transition: transform 2s;
 }
 
-.designation-scroll{
+.designation-scroll {
   transform: translateX(1000%);
 }
 
-
 .icon-section {
-  transition: transform 3s;
+  transition: transform 2s;
   margin-top: 0;
   margin-bottom: 5px;
   display: flex;
@@ -177,7 +173,7 @@ nav{
   transition: transform 3s;
 }
 
-.icon-github-scroll{
+.icon-github-scroll {
   transform: rotate(5490deg);
 }
 
@@ -187,7 +183,7 @@ nav{
   transition: transform 3s;
 }
 
-.icon-linkedin-scroll{
+.icon-linkedin-scroll {
   transform: rotate(5490deg);
 }
 
@@ -197,7 +193,7 @@ nav{
   transition: transform 3s;
 }
 
-.icon-dribbble-scroll{
+.icon-dribbble-scroll {
   transform: rotate(5490deg);
 }
 
@@ -205,7 +201,7 @@ nav{
   transform: translate(48vw, -20vh) rotate(-90deg) scale(0.8);
 }
 
-.text-section{
+.text-section {
   text-align: center;
   transition: transform 2s;
 }
@@ -220,43 +216,31 @@ nav{
   background: #DFF0FE;
 }
 
-.text-link{
+.text-link {
   text-decoration: none;
   font-family: 'Satisfy', cursive;
   color: #4788C7;
   font-size: 16px;
 }
 
-.text-link-scroll{
+.text-link-scroll {
   transform: translate(37vw, -70vh) scale(0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-main{
+main {
   position: relative;
   top: 100%;
   text-align: center;
   transform: translateY(0);
   transition: transform 0.5s;
   margin-bottom: 250px;
-
 }
 
-.main-scroll{
+.main-scroll {
   transform: translateY(-70vh);
 }
 
-.skills-heading{
+.skills-heading {
   color: #4788C7;
   font-size: 2.2rem;
   font-family: 'Satisfy', cursive;
@@ -264,11 +248,11 @@ main{
   margin-bottom: 50px;
 }
 
-.skills{
-/* margin: 0 400px; */
+.skills {
+  /* margin: 0 400px; */
 }
 
-.figure-div{
+.figure-div {
   display: inline-block;
   background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
   border-radius: 50% 50%;
@@ -277,57 +261,26 @@ main{
   margin: 10px;
 }
 
-figure{
-margin-top: 20px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+figure {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-.skills-images{
+.skills-images {
   height: 5.5rem;
   /* margin-right: 5px; */
 }
 
-figcaption{
+figcaption {
   color: #4788C7;
   font-size: 1.2rem;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-
-
-.summery{
-  /* position: absolute; */
-  /* top:100%; */
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
+footer {
   text-align: center;
   box-sizing: border-box;
   position: fixed;
@@ -339,43 +292,45 @@ footer{
   opacity: 0;
 }
 
-.footer-scroll-up{
+.footer-scroll-up {
   animation-name: footer-animation-up;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes footer-animation-up{
-  from{
+@keyframes footer-animation-up {
+  from {
     bottom: -50px;
     opacity: 0;
   }
-  to{
+
+  to {
     bottom: 0;
     opacity: 1;
   }
 }
 
-.footer-scroll-down{
+.footer-scroll-down {
   animation-name: footer-animation-down;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes footer-animation-down{
-  from{
+@keyframes footer-animation-down {
+  from {
     bottom: 0px;
     opacity: 1;
   }
-  to{
+
+  to {
     bottom: -50px;
     opacity: 0;
   }
 }
 
-.hire{
+.hire {
   box-sizing: border-box;
   font-family: 'Satisfy', cursive;
   text-decoration: none;
@@ -388,46 +343,17 @@ footer{
   padding: 4px 5px 2px 6px;
 }
 
+.hire-link {
+  transform: scale(0);
+  transition: transform 1s 0.5s;
+}
 
+.hire-scroll {
+  transform: scale(1);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width : 500px){
-  .header{
+@media screen and (max-width : 500px) {
+  .header {
     width: 100%;
     height: 50px;
     position: fixed;
@@ -441,8 +367,7 @@ footer{
     align-items: center;
   }
 
-
-  main{
+  main {
     box-sizing: border-box;
     position: relative;
     top: 100%;
@@ -450,16 +375,15 @@ footer{
     transform: translateY(0);
     transition: transform 0.5s;
     margin: 150px 10px 150px 10px;
-
   }
 
-  .main-scroll{
+  .main-scroll {
     transform: translateY(-250vh);
     margin: 0 10px 0 10px;
     padding-bottom: 70px;
   }
 
-  .skills-heading{
+  .skills-heading {
     color: #4788C7;
     font-size: 1.7rem;
     font-family: 'Satisfy', cursive;
@@ -467,11 +391,11 @@ footer{
     margin-bottom: 20px;
   }
 
-  .skills{
-  /* margin: 0 400px; */
+  .skills {
+    /* margin: 0 400px; */
   }
 
-  .figure-div{
+  .figure-div {
     display: inline-block;
     background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
     border-radius: 50% 50%;
@@ -480,31 +404,28 @@ footer{
     margin: 10px;
   }
 
-  figure{
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  figure {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-
-  .skills-images{
+  .skills-images {
     height: 3rem;
     /* margin-right: 5px; */
   }
 
-  figcaption{
+  figcaption {
     color: #4788C7;
     font-size: 1.2rem;
     font-family: 'Josefin Sans', sans-serif;
   }
-
-
 }
 
-@media screen and (max-width : 800px){
-  .header{
+@media screen and (max-width : 800px) {
+  .header {
     width: 100%;
     height: 50px;
     position: fixed;
@@ -518,21 +439,20 @@ footer{
     align-items: center;
   }
 
-  main{
+  main {
     position: relative;
     top: 100%;
     text-align: center;
     transform: translateY(0);
     transition: transform 0.5s;
     margin: 0 20px 250px 20px;
-
   }
 
-  .main-scroll{
+  .main-scroll {
     transform: translateY(-70vh);
   }
 
-  .skills-heading{
+  .skills-heading {
     color: #4788C7;
     font-size: 1.7rem;
     font-family: 'Satisfy', cursive;
@@ -540,11 +460,11 @@ footer{
     margin-bottom: 20px;
   }
 
-  .skills{
-  /* margin: 0 400px; */
+  .skills {
+    /* margin: 0 400px; */
   }
 
-  .figure-div{
+  .figure-div {
     display: inline-block;
     background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
     border-radius: 50% 50%;
@@ -553,38 +473,33 @@ footer{
     margin: 10px;
   }
 
-  figure{
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  figure {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-
-  .skills-images{
+  .skills-images {
     height: 3rem;
     /* margin-right: 5px; */
   }
 
-  figcaption{
+  figcaption {
     color: #4788C7;
     font-size: 1.2rem;
     font-family: 'Josefin Sans', sans-serif;
   }
-
 }
 
-
-
-
-@media screen and (max-width : 1000px){
+@media screen and (max-width : 1000px) {
   .icons-scroll {
     transform: translate(47.5vw, -20vh) rotate(-90deg) scale(0.8);
   }
 }
 
-@media screen and (max-width : 500px){
+@media screen and (max-width : 500px) {
   .icons-scroll {
     transform: translate(46.2vw, -20vh) rotate(-90deg) scale(0.8);
   }
