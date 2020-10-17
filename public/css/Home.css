@@ -16,7 +16,7 @@ body {
   position: fixed;
   top: -50px;
   opacity: 0;
-  z-index: 4;
+  z-index: 300;
   padding: 3px 140px 0px 140px;
   /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12); */
   box-sizing: border-box;
@@ -102,7 +102,7 @@ body {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
-  z-index: 1;
+  z-index: 200;
   transform-origin: top;
   transform: scaleY(1);
   transition: transform 2s;
@@ -117,7 +117,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0) scale(1);
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .profile {
@@ -165,6 +165,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 500;
 }
 
 .icon-github {
@@ -227,6 +228,16 @@ nav {
   transform: translate(37vw, -70vh) scale(0);
 }
 
+
+
+
+
+
+
+
+
+
+
 main {
   position: relative;
   top: 100%;
@@ -234,11 +245,94 @@ main {
   transform: translateY(0);
   transition: transform 0.5s;
   margin-bottom: 250px;
+  z-index: 9;
 }
 
-.main-scroll {
-  transform: translateY(-70vh);
+/* .main-scroll {
+transform: translateY(-70vh);
+} */
+
+.work{
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  padding: auto;
+  text-align: center;
 }
+
+.work-heading{
+  color: #4788C7;
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
+  text-decoration: underline;
+}
+
+
+h5{
+  font-size: 20px;
+  color: #4788C7;
+  font-family: 'Satisfy', cursive;
+  text-decoration: underline;
+}
+
+.ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  text-align: justify;
+  color: #4788C7;
+  font-size: 1.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+li{
+  list-style: circle;
+  color: #4788C7;
+  list-style-position: inside;
+}
+
+hr{
+  border: 0;
+  height: 2px;
+  background-image: -webkit-linear-gradient(left, #DFF0FE, #4788C7, #DFF0FE);
+  background-image: -moz-linear-gradient(left, #DFF0FE, #4788C7, #DFF0FE);
+  background-image: -ms-linear-gradient(left, #DFF0FE, #4788C7, #DFF0FE);
+  background-image: -o-linear-gradient(left, #DFF0FE, #4788C7, #DFF0FE);
+}
+
+.open-app{
+  box-sizing: border-box;
+  font-family: 'Satisfy', cursive;
+  color: #4788C7;
+  font-size: 16px;
+  border: 2px solid #4788C7;
+  border-radius: 15px;
+  border-width: thin;
+  background: #DFF0FE;
+  padding: 3px 5px 3px 6px;
+  text-decoration: none;
+}
+
+.project-image-resume{
+  box-sizing: border-box;
+  width: 29vw;
+  height: 41vh;
+}
+
+.project-image-iCakes{
+  box-sizing: border-box;
+  width: 19vw;
+  height: 41vh;
+}
+
+
+
+
+
+
 
 .skills-heading {
   color: #4788C7;
@@ -246,6 +340,7 @@ main {
   font-family: 'Satisfy', cursive;
   text-decoration: underline;
   margin-bottom: 50px;
+  margin-top: 2000px;
 }
 
 .skills {
@@ -280,6 +375,18 @@ figcaption {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
   text-align: center;
   box-sizing: border-box;
@@ -290,6 +397,7 @@ footer {
   background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
   padding: 15px;
   opacity: 0;
+  z-index: 99;
 }
 
 .footer-scroll-up {
@@ -352,6 +460,16 @@ footer {
   transform: scale(1);
 }
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width : 500px) {
   .header {
     width: 100%;
@@ -359,7 +477,7 @@ footer {
     position: fixed;
     top: -50px;
     opacity: 0;
-    z-index: 4;
+    z-index: 400;
     padding: 3px 3px 0px 3px;
     box-sizing: border-box;
     display: flex;
@@ -377,11 +495,11 @@ footer {
     margin: 150px 10px 150px 10px;
   }
 
-  .main-scroll {
+  /* .main-scroll {
     transform: translateY(-250vh);
     margin: 0 10px 0 10px;
     padding-bottom: 70px;
-  }
+  } */
 
   .skills-heading {
     color: #4788C7;
@@ -422,6 +540,18 @@ footer {
     font-size: 1.2rem;
     font-family: 'Josefin Sans', sans-serif;
   }
+
+  .project-image-resume{
+    box-sizing: border-box;
+    width: 300px;
+    height: 31vh;
+  }
+
+  .project-image-iCakes{
+    box-sizing: border-box;
+    width: 300px;
+    height: 31vh;
+  }
 }
 
 @media screen and (max-width : 800px) {
@@ -431,7 +561,7 @@ footer {
     position: fixed;
     top: -50px;
     opacity: 0;
-    z-index: 4;
+    z-index: 400;
     padding: 3px 20px 0px 20px;
     box-sizing: border-box;
     display: flex;
@@ -448,9 +578,9 @@ footer {
     margin: 0 20px 250px 20px;
   }
 
-  .main-scroll {
+  /* .main-scroll {
     transform: translateY(-70vh);
-  }
+  } */
 
   .skills-heading {
     color: #4788C7;
