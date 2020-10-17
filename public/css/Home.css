@@ -117,7 +117,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0) scale(1);
-  /* z-index: 2; */
+  z-index: 2;
 }
 
 .profile {
@@ -165,7 +165,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 500;
 }
 
 .icon-github {
@@ -282,7 +281,7 @@ h5{
 }
 
 ul{
-  text-align: justify;
+  text-align: left;
   color: #4788C7;
   font-size: 1.2rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -543,13 +542,13 @@ footer {
 
   .project-image-resume{
     box-sizing: border-box;
-    width: 300px;
+    width: 200px;
     height: 31vh;
   }
 
   .project-image-iCakes{
     box-sizing: border-box;
-    width: 300px;
+    width: 200px;
     height: 31vh;
   }
 }
