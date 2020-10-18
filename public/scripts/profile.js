@@ -96,13 +96,13 @@ $(window).on("scroll", () => {
   }
 });
 
-// $(window).on("scroll", () => {
-//   if ($(window).scrollTop()) {
-//     $("main").addClass("main-scroll");
-//   } else {
-//     $("main").removeClass("main-scroll");
-//   }
-// });
+$(window).on("scroll", () => {
+  if ($(window).scrollTop()) {
+    $("main").addClass("main-scroll");
+  } else {
+    $("main").removeClass("main-scroll");
+  }
+});
 
 $(window).on("scroll", () => {
   if ($(window).scrollTop()) {
