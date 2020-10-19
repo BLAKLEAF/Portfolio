@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
 body {
   margin: 0;
   padding: 0;
@@ -226,22 +229,22 @@ nav {
 
 main {
   position: relative;
-  top: 15%;
+  top: 100%;
   text-align: center;
-  transform: translateX(-2000px);
-  transition: transform 2s;
+  transform: translateY(0);
+  transition: transform 1s;
+  width: 95%;
+  margin: auto;
   margin-bottom: 250px;
   z-index: 9000;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 0;
 }
 
 .main-scroll {
-  transform: translateX(0);
-  opacity: 1;
+  transform: translateY(-70vh);
 }
 
 .work {
@@ -254,8 +257,8 @@ main {
 
 .work-heading {
   color: #4788C7;
-  font-size: 30px;
-  font-family: 'Satisfy', cursive;
+  font-size: 2.2rem;
+  font-family: 'Kaushan Script', cursive;
   text-decoration: underline;
   margin-bottom: 10px;
 }
@@ -310,13 +313,13 @@ hr {
 
 .project-image-resume {
   box-sizing: border-box;
-  width: 29vw;
+  width: 28vw;
   height: 41vh;
 }
 
 .project-image-iCakes {
   box-sizing: border-box;
-  width: 19vw;
+  width: 18vw;
   height: 41vh;
 }
 
@@ -329,9 +332,9 @@ hr {
 .skills-heading {
   color: #4788C7;
   font-size: 2.2rem;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Kaushan Script', cursive;
   text-decoration: underline;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .figure-div {
@@ -366,7 +369,7 @@ figcaption {
   height: 40%;
   margin: auto;
   margin-top: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
   color: #4788C7;
   font-size: 1.2rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -376,7 +379,7 @@ figcaption {
   color: #4788C7;
   font-size: 2.2rem;
   text-decoration: underline;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Kaushan Script', cursive;
   margin-bottom: 0;
 }
 
@@ -476,11 +479,13 @@ footer {
 
   main {
     position: relative;
-    top: 15%;
+    top: 100%;
     text-align: center;
-    transform: translateX(-2000px);
+    transform: translateY(0);
     transition: transform 2s;
-    margin: 0 20px 250px 20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 250px;
     z-index: 9000;
   }
 
@@ -600,11 +605,13 @@ footer {
   main {
     box-sizing: border-box;
     position: relative;
-    top: 15%;
+    top: 100%;
     text-align: center;
-    transform: translateX(-2000px);
+    transform: translateY(0);
     transition: transform 2s;
-    margin: 0 10px 150px 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 150px;
     z-index: 9000;
   }
 
