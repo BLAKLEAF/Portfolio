@@ -21,36 +21,31 @@
         <a href="" class="header-text-link">My Work</a>
       </div>
     </div>
-
     <div class="intro"></div>
-
     <nav>
       <a href=""><img class="profile" src="images/Blakleaf.jpg" alt=""></a>
       <h1 class="name">Hi, I'm Pratik!</h1>
       <p class="designation">A Web Developer</p>
       <section class="icon-section">
-        <a href="https://github.com/BLAKLEAF">
+        <a href="https://github.com/BLAKLEAF" target="_blank">
           <img class="icons icon-github" src="icons/github.png" alt="">
         </a>
-        <a href="https://www.linkedin.com/in/pratik-bankar-731a06148">
+        <a href="https://www.linkedin.com/in/pratik-bankar-731a06148" target="_blank">
           <img class="icons icon-linkedin" src="icons/linkedin.png" alt="">
         </a>
-        <a href="https://dribbble.com/blakleaf">
+        <a href="https://dribbble.com/blakleaf" target="_blank">
           <img class="icons icon-dribbble" src="icons/dribbble.png" alt="">
         </a>
       </section>
-      <div class="text-section">
-        <section class="text-section-container">
-          <a href="" class="text-link">My Work</a>
-        </section>
-      </div>
     </nav>
-
+    <div class="tooltip">
+      <a href="">iCakes</a>
+      <a href="">My Portfolio</a>
+    </div>
   </header>
 
 
   <main>
-
     <div class="work">
       <h3 class="work-heading">
         My work so far
@@ -60,7 +55,7 @@
         <h5>
           iCakes
         </h5>
-        <a href="https://cryptic-oasis-25409.herokuapp.com/" class="open-app">
+        <a href="https://cryptic-oasis-25409.herokuapp.com/" target="_blank" class="open-app">
           open app
         </a>
         <div class="ul">
@@ -70,9 +65,9 @@
           </ul>
         </div>
         <section class="project-image-section">
-          <img class="project-image-iCakes" src="images/iCakes1.png" alt="">
-          <img class="project-image-iCakes" src="images/iCakes2.png" alt="">
-          <img class="project-image-iCakes" src="images/iCakes3.png" alt="">
+          <a href="images/iCakes1.png" target="_blank"><img class="project-image-iCakes" src="images/iCakes1.png" alt=""></a>
+          <a href="images/iCakes2.png" target="_blank"><img class="project-image-iCakes" src="images/iCakes2.png" alt=""></a>
+          <a href="images/iCakes3.png" target="_blank"><img class="project-image-iCakes" src="images/iCakes3.png" alt=""></a>
         </section>
       </div>
       <hr>
@@ -80,7 +75,7 @@
         <h5>
           My Portfolio
         </h5>
-        <a href="https://powerful-plateau-92353.herokuapp.com/" class="open-app">
+        <a href="https://powerful-plateau-92353.herokuapp.com/" target="_blank" class="open-app">
           open app
         </a>
         <div class="ul">
@@ -90,62 +85,54 @@
           </ul>
         </div>
         <section class="project-image-section">
-          <img class="project-image-resume" src="images/Portfolio1.png" alt="">
-          <img class="project-image-resume" src="images/Portfolio2.png" alt="">
+          <a href="images/Portfolio1.png" target="_blank"><img class="project-image-resume" src="images/Portfolio1.png" alt=""></a>
+          <a href="images/Portfolio2.png" target="_blank"><img class="project-image-resume" src="images/Portfolio2.png" alt=""></a>
           <!-- <img class="project-image" src="" alt=""> -->
         </section>
       </div>
       <hr>
     </div>
-
-
     <div class="skills">
       <h4 class="skills-heading">
         Technologies I'm Skilled in!
       </h4>
-      <div>
+      <div class="skills-section">
         <div class="figure-div">
           <figure>
             <img class="skills-images" src="icons/html.png" alt="">
             <figcaption>HTML</figcaption>
           </figure>
         </div>
-
         <div class="figure-div">
           <figure>
             <img class="skills-images" src="icons/css.png" alt="">
             <figcaption>CSS</figcaption>
           </figure>
         </div>
-
         <div class="figure-div">
           <figure>
             <img class="skills-images" src="icons/javascript.png" alt="">
             <figcaption>JavaScript</figcaption>
           </figure>
         </div>
-
         <div class="figure-div">
           <figure>
             <img class="skills-images" src="icons/bootstrap.png" alt="">
             <figcaption>Bootstrap</figcaption>
           </figure>
         </div>
-
         <div class="figure-div">
           <figure>
             <img class="skills-images" src="icons/jquery.png" alt="">
             <figcaption>jQuery</figcaption>
           </figure>
         </div>
-
         <div class="figure-div">
           <figure>
             <img class="skills-images" src="icons/nodejs.png" alt="">
             <figcaption>Node.js</figcaption>
           </figure>
         </div>
-
         <div class="figure-div">
           <figure>
             <img class="skills-images" src="icons/mongodb.png" alt="">
@@ -153,8 +140,8 @@
           </figure>
         </div>
       </div>
+      <hr>
     </div>
-
     <div class="about-me">
       <h4 class="about-me-heading">About Me!</h4>
       <p class="about-me-content">
@@ -163,12 +150,28 @@
         and give me an oportunity.
       </p>
     </div>
-
   </main>
+
+  <div class="modal-background"></div>
+  <div class="modal">
+    <div class="modal-header">
+      <span class="closeBtn">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class="mail">
+        <span><a href="mailto:blakleaf.003@gmail.com"><img class="mail-img img" src="icons/mail.png" alt=""></a></span>
+        <span><a href="mailto:blakleaf.003@gmail.com" class="mail-link">blakleaf.003@gmail.com</a></span>
+      </div>
+      <div class="call">
+        <span><a href="tel:9623637180"><img class="call-img img" src="icons/call.png" alt=""></a></span>
+        <span><a href="tel:9623637180" class="call-link">9623637180</a></span>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="hire-link">
-      <a href="" class="hire">Hire Me!</a>
+      <span class="hire">Hire Me!</span>
     </div>
   </footer>
 

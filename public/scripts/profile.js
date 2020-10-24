@@ -65,15 +65,6 @@ $(window).on("scroll", () => {
 
 $(window).on("scroll", () => {
   if ($(window).scrollTop()) {
-    $(".text-section").addClass("text-link-scroll");
-  } else {
-    $(".text-section").removeClass("text-link-scroll");
-  }
-});
-
-
-$(window).on("scroll", () => {
-  if ($(window).scrollTop()) {
     $(".intro").addClass("intro-scroll");
   } else {
     $(".intro").removeClass("intro-scroll");
@@ -118,4 +109,19 @@ $(window).on("scroll", () => {
   } else {
     $(".hire-link").removeClass("hire-scroll");
   }
+});
+
+$(".hire").click(() => {
+  $(".modal").css({display: "block"});
+  $(".modal-background").css({display: "block"});
+});
+
+$(".closeBtn").click(() => {
+  $(".modal").css({display: "none"});
+  $(".modal-background").css({display: "none"});
+});
+
+$(".modal-background").click(() => {
+  $(".modal").css({display: "none"});
+  $(".modal-background").css({display: "none"});
 });

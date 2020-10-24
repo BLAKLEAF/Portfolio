@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 body {
   margin: 0;
@@ -16,7 +15,7 @@ body {
   position: fixed;
   top: -50px;
   opacity: 0;
-  z-index: 10000;
+  z-index: 5;
   padding: 3px 140px 0px 140px;
   box-sizing: border-box;
   display: flex;
@@ -95,6 +94,19 @@ body {
   transform: scale(1);
 }
 
+/* .tooltip{
+  position: fixed;
+  top: 50px;
+  left: 81%;
+  z-index: 8;
+  display: flex;
+  line-height: 30px;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 100px;
+  box-sizing: border-box;
+} */
+
 .intro {
   background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
@@ -102,7 +114,7 @@ body {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
-  z-index: 200;
+  z-index: 1;
   transform-origin: top;
   transform: scaleY(1);
   transition: transform 2s;
@@ -117,7 +129,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0) scale(1);
-  z-index: 300;
+  z-index: 2;
 }
 
 .profile {
@@ -201,30 +213,29 @@ nav {
   transform: translate(48vw, -20vh) rotate(-90deg) scale(0.8);
 }
 
-.text-section {
-  text-align: center;
-  transition: transform 2s;
+img {
+  transition: 0.1s;
 }
 
-.text-section-container {
-  position: inherit;
-  display: inline-block;
-  padding: 4px 5px 2px 6px;
-  border: 2px solid #4788C7;
-  border-radius: 15px;
-  border-width: thin;
-  background: #DFF0FE;
+img:hover {
+  transform: scale(1.1);
+  filter: brightness(90%);
 }
 
-.text-link {
-  text-decoration: none;
-  font-family: 'Satisfy', cursive;
-  color: #4788C7;
-  font-size: 16px;
+.icon-section img:hover {
+  transform: translateY(-10px);
 }
 
-.text-link-scroll {
-  transform: translate(37vw, -70vh) scale(0);
+.hire:hover {
+  filter: brightness(90%);
+}
+
+.open-app:hover {
+  filter: brightness(90%);
+}
+
+.header-text-link:hover {
+  filter: brightness(90%);
 }
 
 main {
@@ -235,8 +246,8 @@ main {
   transition: transform 1s;
   width: 95%;
   margin: auto;
-  margin-bottom: 250px;
-  z-index: 9000;
+  margin-bottom: 300px;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,9 +335,8 @@ hr {
 }
 
 .skills {
-  margin-top: 200px;
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
 }
 
 .skills-heading {
@@ -368,8 +378,6 @@ figcaption {
   width: 40%;
   height: 40%;
   margin: auto;
-  margin-top: 200px;
-  margin-bottom: 90px;
   color: #4788C7;
   font-size: 1.2rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -389,6 +397,103 @@ figcaption {
   border-top: 5px solid rgba(137, 171, 245, 0.37);
 }
 
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+  display: none;
+  width: 50%;
+  height: 30%;
+  text-align: center;
+  background: #DFF0FE;
+  border-radius: 30px 30px;
+  border: 3px solid #4788C7;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modal;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes modal{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  font-size: 30px;
+  padding-top: 8px;
+  padding-right: 20px;
+  color: #4788C7;
+}
+
+.closeBtn {
+  float: right;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  transform: rotate(90deg);
+}
+
+.modal-body {
+  font-size: 30px;
+  color: #4788C7;
+  margin-top: 70px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img {
+  height: 35px;
+  margin-right: 10px;
+}
+
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.call {
+  margin-right: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-link{
+  color: #4788C7;
+  font-family: 'Teko', sans-serif;
+}
+
+.call-link{
+  color: #4788C7;
+  font-family: 'Teko', sans-serif;
+}
+
 footer {
   text-align: center;
   box-sizing: border-box;
@@ -399,7 +504,7 @@ footer {
   background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
   padding: 15px;
   opacity: 0;
-  z-index: 9900;
+  z-index: 4;
 }
 
 .footer-scroll-up {
@@ -451,6 +556,7 @@ footer {
   border-width: thin;
   background: #DFF0FE;
   padding: 4px 5px 2px 6px;
+  cursor: pointer;
 }
 
 .hire-link {
@@ -468,7 +574,7 @@ footer {
     height: 50px;
     position: fixed;
     top: -50px;
-    opacity: 0;
+    opacity: 5;
     z-index: 10000;
     padding: 3px 20px 0px 20px;
     box-sizing: border-box;
@@ -486,19 +592,18 @@ footer {
     width: 90%;
     margin: auto;
     margin-bottom: 250px;
-    z-index: 9000;
+    z-index: 3;
   }
 
   .skills-heading {
     color: #4788C7;
     font-size: 1.7rem;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Kaushan Script', cursive;
     text-decoration: underline;
     margin-bottom: 20px;
   }
 
   .skills {
-    margin-top: 200px;
     width: 80%;
     height: 80%;
   }
@@ -560,8 +665,6 @@ footer {
   .about-me {
     width: 60%;
     height: 60%;
-    margin-top: 200px;
-    margin-bottom: 200px;
     margin: auto;
     color: #4788C7;
     font-size: 1.2rem;
@@ -576,7 +679,7 @@ footer {
     position: fixed;
     top: -50px;
     opacity: 0;
-    z-index: 10000;
+    z-index: 5;
     padding: 3px 3px 0px 3px;
     box-sizing: border-box;
     display: flex;
@@ -592,7 +695,7 @@ footer {
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
-    z-index: 200;
+    z-index: 1;
     transform-origin: top;
     transform: scaleY(1);
     transition: transform 2s;
@@ -609,31 +712,32 @@ footer {
     text-align: center;
     transform: translateY(0);
     transition: transform 2s;
-    width: 90%;
+    width: 85%;
     margin: auto;
-    margin-bottom: 150px;
-    z-index: 9000;
+    margin-bottom: 250px;
+    z-index: 3;
   }
 
   .skills-heading {
     color: #4788C7;
     font-size: 1.7rem;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Kaushan Script', cursive;
     text-decoration: underline;
     margin-bottom: 20px;
   }
+
 
   .figure-div {
     display: inline-block;
     background-image: radial-gradient(circle 993px at 0.5% 50.5%, rgba(137, 171, 245, 0.37) 0%, rgba(245, 247, 252, 1) 100.2%);
     border-radius: 50% 50%;
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
     margin: 10px;
   }
 
   figure {
-    margin-top: 30px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -646,7 +750,7 @@ footer {
 
   figcaption {
     color: #4788C7;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
   }
 
@@ -681,11 +785,17 @@ footer {
     width: 60%;
     height: 60%;
     margin: auto;
-    margin-top: 200px;
-    margin-bottom: 200px;
     color: #4788C7;
     font-size: 1.2rem;
     font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .modal {
+    width: 80%;
+  }
+
+  .modal-body {
+    margin-top: 90px;
   }
 }
 
